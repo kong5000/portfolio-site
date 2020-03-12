@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
-
 const NavigationBar = () => (
     <Navbar expand="lg" className='navigation-bar'>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
