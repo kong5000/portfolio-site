@@ -6,7 +6,7 @@ import NavigationBar from './components/NavigationBar'
 import HomepageHero from './components/HomepageHero'
 import ProjectSection from './components/ProjectSection'
 
-function App() {
+const App = () => {
   return (
     <Container fluid className="head-container">
       <NavigationBar />

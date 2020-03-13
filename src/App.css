@@ -80,12 +80,47 @@
 }
 
 .project-card{
+  margin: 10% 10%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-image{
+  width: 250px; 
+  height: 250px;
+}
+@media screen and (max-width: 600px){
+  .project-card{
+    margin: 20px auto;
+    text-align: center;
+    flex-direction: column;
+    width: 250px;
+  }
+  .card-text{
+    display: none;
+  }
+}
+
+.button-holder{
   text-align: center;
-   margin: auto;
+  margin-top: 20px;
+}
+.card-button{
+  margin: 6px;
 }
 
 
-.card-image{
-  border-radius: 50%;
-  padding: 20px;
+
+.inlineblock{
+  display: inline-block;
+}
+.skill{
+  display: inline-block;
+  border: solid black 5px;
+  border-radius: 10%;
+  padding: 5px;
+  margin: 10px;
+}
+.align-vertical{
+  position: relative;
 }

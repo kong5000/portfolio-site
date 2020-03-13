@@ -5,10 +5,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 const ProjectSection = () => (
-    <section>
+    <div className="project-section">
         <h2 id="projects-header">PROJECTS</h2>
-        <Row className="card-holder">
-            <Col className="col-lg-4">
+
                 <ProjectCard
                     image={gameImage}
                     title="Android Game"
@@ -17,29 +16,28 @@ const ProjectSection = () => (
                         "Java", "Android", "Game Design"
                     ]}
                 />
-            </Col>
-            <Col className="col-lg-4">
+
+
                 <ProjectCard
                     image={gameImage}
-                    title="Android Game"
-                    text="A retro sidescroller mobile game"
+                    title="Blog Site"
+                    text="A simply blog site I built to learn more about backend development
+                    A simply blog site I built to learn more about backend development"
                     skills={[
-                        "Java", "Android", "Game Design"
+                        "Node.js", "React", "Redux", "MongoDB"
                     ]}
                 />
-            </Col>
-            <Col className="col-lg-4">
+
                 <ProjectCard
                     image={gameImage}
-                    title="Android Game"
-                    text="A retro sidescroller mobile game"
+                    title="Portfolio Site"
+                    text="My personal website I built to showcase my projects and to learn the basics of frontend development"
                     skills={[
-                        "Java", "Android", "Game Design"
+                        "React", "CSS", "Bootstrap", "HTML"
                     ]}
                 />
-            </Col>
-        </Row>
-    </section>
+
+    </div>
 )
 
 export default ProjectSection
