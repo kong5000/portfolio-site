@@ -1,13 +1,10 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import gameImage from '../assets/game.png'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 const ProjectSection = () => (
     <div className="project-section">
         <h2 id="projects-header">PROJECTS</h2>
-
                 <ProjectCard
                     image={gameImage}
                     title="Android Game"
@@ -21,8 +18,8 @@ const ProjectSection = () => (
                 <ProjectCard
                     image={gameImage}
                     title="Blog Site"
-                    text="A simply blog site I built to learn more about backend development
-                    A simply blog site I built to learn more about backend development"
+                    text="A simple site where users can sign up to post text blogs and comment on posts. This project started as an exercise for the Full Stack Open course 
+                    offered by the University of Helsinki. It helped me learn some of the basics of the backend"
                     skills={[
                         "Node.js", "React", "Redux", "MongoDB"
                     ]}

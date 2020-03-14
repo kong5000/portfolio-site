@@ -6,15 +6,26 @@ import NavigationBar from './components/NavigationBar'
 import HomepageHero from './components/HomepageHero'
 import ProjectSection from './components/ProjectSection'
 import ContactSection from './components/ContactSection'
+import CoverPage from './components/CoverPage'
 
 const App = () => {
   return (
-    <Container fluid className="head-container">
-      <NavigationBar />
-      <HomepageHero />
-      <ProjectSection/>
-      <ContactSection/>
-    </Container>
+    <div>
+      <div class="page-top">
+      <CoverPage/>
+      </div>
+      <div class="page-projects"></div>
+    </div>
+    // <div>
+    // <CoverPage/>
+
+    // </div>
+    // <Container fluid className="head-container">
+    //   <NavigationBar />
+    //   <HomepageHero />
+    //   <ProjectSection/>
+    //   <ContactSection/>
+    // </Container>
   );
 }
 

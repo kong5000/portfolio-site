@@ -13,8 +13,9 @@ const ContactSection = () => {
     }
 
     return(
-        <div>
-            <Form onSubmit={onSubmit}>
+        <div id="contact-section">
+            <h2>Contact Me</h2>
+            <Form onSubmit={onSubmit} className="contact-form">
                 <Form.Group>
                     <Form.Label htmlFor="name">Name</Form.Label>
                     <Form.Control id="name" name="name" type="text" value={state.name} onChange={onInputChange} /> 
@@ -25,7 +26,7 @@ const ContactSection = () => {
                 </Form.Group>
                 <Form.Group>
                     <Form.Label htmlFor="message">Message</Form.Label>
-                    <Form.Control id="message" name="message" type="textarea" value={state.message} onChange={onInputChange} /> 
+                    <Form.Control id="message" name="message" as="textarea" rows="3" value={state.message} onChange={onInputChange} /> 
                 </Form.Group>
                 <Button type="submit">Send</Button>
             </Form>
