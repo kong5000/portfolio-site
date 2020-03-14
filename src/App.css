@@ -80,15 +80,18 @@
 }
 
 .project-card{
-  margin: 10% 10%;
+  margin: 5% 10%;
   flex-direction: row;
   align-items: center;
+  box-shadow: 0px 0 12px grey;
 }
+
 
 .card-image{
   width: 250px; 
   height: 250px;
 }
+
 @media screen and (max-width: 600px){
   .project-card{
     margin: 20px auto;

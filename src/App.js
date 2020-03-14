@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import NavigationBar from './components/NavigationBar'
 import HomepageHero from './components/HomepageHero'
 import ProjectSection from './components/ProjectSection'
+import ContactSection from './components/ContactSection'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <NavigationBar />
       <HomepageHero />
       <ProjectSection/>
+      <ContactSection/>
     </Container>
   );
 }
