@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 import gameImage from '../assets/game.png'
 
 const ProjectSection = () => (
-    <div className="project-section">
+    <div id="projects-section" className="project-section">
         <h2 id="projects-header">PROJECTS</h2>
                 <ProjectCard
                     image={gameImage}
