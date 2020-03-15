@@ -11,21 +11,10 @@ import CoverPage from './components/CoverPage'
 const App = () => {
   return (
     <div>
-      <div class="page-top">
+         <NavigationBar/>
       <CoverPage/>
-      </div>
-      <div class="page-projects"></div>
+      <ProjectSection/>
     </div>
-    // <div>
-    // <CoverPage/>
-
-    // </div>
-    // <Container fluid className="head-container">
-    //   <NavigationBar />
-    //   <HomepageHero />
-    //   <ProjectSection/>
-    //   <ContactSection/>
-    // </Container>
   );
 }
 
