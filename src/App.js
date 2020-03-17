@@ -13,7 +13,6 @@ const App = () => {
       <CoverPage/>
       <ProjectSection id="projects"/>
       <ContactSection id="contact"/>
-
     </div>
   );
 }

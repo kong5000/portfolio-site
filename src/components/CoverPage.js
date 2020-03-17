@@ -6,10 +6,13 @@ const CoverPage = () => {
     return (
         <div class="full-screen text-center cover-page">
             <Container className="cover-page-content">
-                <p className="lead">Former Electrical Engineer Learning to Code</p>
-                <i className="fas fa-charging-station fa-7x icon"></i>
-                <i className="fas fa-arrow-right fa-7x icon"></i>
-                <i className="fas fa-laptop-code fa-7x icon"></i>
+                <p class="lead-small-screen">Keith Ong</p>
+                <p class="lead">Former Electrical Engineer Learning to Code</p>
+                <i class="fas fa-charging-station fa-7x icon"></i>
+                <i class="fas fa-arrow-right fa-7x icon"></i>
+                <i class="fas fa-arrow-down  fa-7x icon"></i>
+                <i class="fas fa-laptop-code fa-7x icon"></i>
+                <div class="photo-credit">Photo by Alexandre Debiève on Unsplash</div>
             </Container>
         </div>
     )
