@@ -11,7 +11,7 @@ const ContactSection = () => {
     const onSubmit = (event) => {
         event.preventDefault()
         setEnabled(false)
-        axios.post('http://localhost:3030/api/email', state)
+        axios.post('https://portfolio-site-backend.herokuapp.com/api/email/', state)
             .then(res => {
                 if (res.data.successfull) {
                     setEnabled(true)
