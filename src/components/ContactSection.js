@@ -7,18 +7,29 @@ const ContactSection = () => {
     const [state, setState] = useState({ name: '', email: '', message: '' })
     const [enabled, setEnabled] = useState(true);
     const [emailSent, setEmailSent] = useState(true);
+    const [showConfirmation, setShowConfirmation] = useState(false)
+    const [showError, setShowError] = useState(false)
 
     const onSubmit = (event) => {
         event.preventDefault()
         setEnabled(false)
         axios.post('https://portfolio-site-backend.herokuapp.com/api/email/', state)
             .then(res => {
-                if (res.data.successfull) {
+                console.log(res.data)
+                if (res.data.successful) {
                     setEnabled(true)
                     setEmailSent(true)
+                    setShowConfirmation(true)
+                    setTimeout(() => {
+                        setShowConfirmation(false)
+                    }, 3000)
                 } else {
                     setEnabled(true)
                     setEmailSent(false)
+                    setShowError(true)
+                    setTimeout(() => {
+                        setShowError(false)
+                    }, 3000)
                 }
             })
     }
@@ -42,7 +53,9 @@ const ContactSection = () => {
                     <Form.Label htmlFor="message">Message</Form.Label>
                     <Form.Control id="message" name="message" as="textarea" rows="3" value={state.message} onChange={onInputChange} />
                 </Form.Group>
-                <Button type="submit">Send</Button>
+                {showError && <div className="error-text">Server error, email not sent</div>}
+                {showConfirmation && <div className="confirm-text">Email Sent</div>}
+                <Button type="submit" enabled={enabled}>Send</Button>
             </Form>
         </div>
     )

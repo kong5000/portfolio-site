@@ -15,7 +15,7 @@ const ProjectSection = () => (
                     skills={[
                         "React", "CSS", "Bootstrap", "HTML"
                     ]}
-                    githubLink={'https://github.com/kong5000/stock-tracker'}
+                    githubLink={'https://github.com/kong5000/stock-tracker-frontend'}
                     demoLink={'https://beanstocktracker.firebaseapp.com/'}
                 />
                 <ProjectCard
@@ -26,15 +26,19 @@ const ProjectSection = () => (
                     skills={[
                         "Java", "Android", "Game Design"
                     ]}
+                    githubLink={'https://github.com/kong5000/Android-Sidescroller-Game'}
+
                 />
                 <ProjectCard
                     image={blogAppImage}
-                    title="Blog Site"
-                    text="A simple site where users can sign up to post text blogs and comment on posts. This project started as an exercise for the Full Stack Open course 
-                    offered by the University of Helsinki. It helped me learn some of the basics of the backend"
+                    title="PostAp"
+                    text="A simple site where users can sign up to make text posts and comment and vote on them. This project started as an exercise for the Full Stack Open course 
+                    offered by the University of Helsinki. It helped me learn some of the basics of backend development"
                     skills={[
                         "Node.js", "React", "Redux", "MongoDB"
                     ]}
+                    githubLink={'https://github.com/kong5000/blog-list-front'}
+                    demoLink={'https://post-ap-frontend.web.app/'}
                 />
                 <ProjectCard
                     image={mySiteImage}
@@ -43,6 +47,7 @@ const ProjectSection = () => (
                     skills={[
                         "React", "CSS", "Bootstrap", "HTML"
                     ]}
+                    githubLink={'https://github.com/kong5000/portfolio-site'}
                 />
     </div>
 )
